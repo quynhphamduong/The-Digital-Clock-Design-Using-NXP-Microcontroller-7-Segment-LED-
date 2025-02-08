@@ -1,0 +1,117 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: tran quang nguyen anh, hcmut, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.40.0.3
+Toolchain Path:  D:\intern\tool\k\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\intern\MOCK\CODE\EMB_MOCK.uvprojx
+Project File Date:  08/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'D:\intern\tool\k\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling SCG_SOURC.c...
+compiling LPIT_SOURC.c...
+compiling LPSPI_SOURC.c...
+LPUART_SOURC.c(33): warning: unused parameter 'PARITY_BIT' [-Wunused-parameter]
+   33 | void set_frame(int channel, int STOP_BIT, int DATA_LENGTH_TRANSFER, int PARITY_BIT)
+      |                                                                         ^
+1 warning generated.
+compiling LPUART_SOURC.c...
+compiling INTERRUPT_SOURC.c...
+compiling PORT_SOURC.c...
+compiling PCC_SOURC.c...
+compiling Main.c...
+compiling FTFC_SOURC.c...
+compiling SYSTEMTICK_SOURC.c...
+compiling startup.c...
+EMB_MOCK_SOURC.c(453): warning: 'strcpy' will always overflow; destination buffer has size 8, but the source string has length 9 (including NUL byte) [-Wfortify-source]
+  453 |     strcpy(g_date,"31122000"); 
+      |     ^
+EMB_MOCK_SOURC.c(454): warning: 'strcpy' will always overflow; destination buffer has size 6, but the source string has length 7 (including NUL byte) [-Wfortify-source]
+  454 |     strcpy(g_time,"235959"); 
+      |     ^
+EMB_MOCK_SOURC.c(464): warning: 'strcpy' will always overflow; destination buffer has size 6, but the source string has length 7 (including NUL byte) [-Wfortify-source]
+  464 |         strcpy(g_time_alarm,"235959");
+      |         ^
+EMB_MOCK_SOURC.c(465): warning: 'strcpy' will always overflow; destination buffer has size 6, but the source string has length 7 (including NUL byte) [-Wfortify-source]
+  465 |         strcpy(g_time,"235959");
+      |         ^
+EMB_MOCK_SOURC.c(479): warning: 'strcpy' will always overflow; destination buffer has size 8, but the source string has length 9 (including NUL byte) [-Wfortify-source]
+  479 |     strcpy(ut_date,"31122000"); 
+      |     ^
+EMB_MOCK_SOURC.c(480): warning: 'strcpy' will always overflow; destination buffer has size 6, but the source string has length 7 (including NUL byte) [-Wfortify-source]
+  480 |     strcpy(ut_time,"235959"); 
+      |     ^
+6 warnings generated.
+compiling EMB_MOCK_SOURC.c...
+UNIT_TEST_SOURC.c(7): warning: variable 'state' set but not used [-Wunused-but-set-variable]
+    7 |         int state; 
+      |             ^
+UNIT_TEST_SOURC.c(92): warning: unused parameter 'ENABLE_INTERRUPT' [-Wunused-parameter]
+   92 | int ut_port_set_up(char PORT, unsigned int PORT_SET_UP, char PORT_DIRECTION, unsigned int PULL_SELECTION, unsigned int ENABLE_INTERRUPT)
+      |                                                                                                                        ^
+2 warnings generated.
+compiling UNIT_TEST_SOURC.c...
+assembling startup_S32K144.S...
+compiling system_S32K144.c...
+linking...
+.\Objects\EMB_MOCK.axf: error: L6031U: Could not open scatter description file ..\..\..\tool\p\Keil\S32_SDK_DFP\1.5.1\platform\devices\S32K144\linker\armc\S32K144_64_flash.sct: No such file or directory
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning, 0 error and 1 fatal error messages.
+".\Objects\EMB_MOCK.axf" - 1 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.S32_SDK_DFP.1.5.1.pack
+                Keil::S32_SDK_DFP@1.5.1
+                NXP S32 SDK S32K14x Device Support
+   * Component: Startup Version: 2.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/S32K144HAxxxLLx
+  ./RTE/_Target_1
+  D:/intern/tool/p/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  D:/intern/tool/p/Keil/S32_SDK_DFP/1.5.1/platform/devices
+  D:/intern/tool/p/Keil/S32_SDK_DFP/1.5.1/platform/devices/common
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device:Startup@2.0.0
+      Include file:  platform/devices/device_registers.h
+      Include file:  platform/devices/S32K144/startup/system_S32K144.h
+      Source file:   platform/devices/S32K144/startup/armc/startup_S32K144.S
+      Source file:   platform/devices/S32K144/startup/system_S32K144.c
+      Source file:   platform/devices/startup.c
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

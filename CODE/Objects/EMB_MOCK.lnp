@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\interrupt_sourc.o"
+".\objects\lpit_sourc.o"
+".\objects\lpspi_sourc.o"
+".\objects\lpuart_sourc.o"
+".\objects\pcc_sourc.o"
+".\objects\port_sourc.o"
+".\objects\scg_sourc.o"
+".\objects\systemtick_sourc.o"
+".\objects\main.o"
+".\objects\emb_mock_sourc.o"
+".\objects\ftfc_sourc.o"
+".\objects\unit_test_sourc.o"
+".\objects\startup.o"
+".\objects\startup_s32k144.o"
+".\objects\system_s32k144.o"
+--strict --scatter "..\..\..\tool\p\Keil\S32_SDK_DFP\1.5.1\platform\devices\S32K144\linker\armc\S32K144_64_flash.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\EMB_MOCK.map" -o .\Objects\EMB_MOCK.axf
