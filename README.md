@@ -1,4 +1,4 @@
-# The Digital Clock Design Using NXP Microcontroller 7 Segment LED Setting Time And Alarm through GUI App ⏰💻
+# The Digital Clock Design Using NXP Microcontroller, 7 Segment LED, Setting Time And Alarm Through GUI App ⏰💻
 
 ## Overview
 
