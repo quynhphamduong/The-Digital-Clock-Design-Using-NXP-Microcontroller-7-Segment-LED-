@@ -4,7 +4,9 @@
 
 This document provides details descriptions about the The Digital Clock that our group creates and sets in the program. 
 
-
+## Contributors
+- Tran Quang Nguyen Anh
+-  Pham Duong Quynh
 ## Running the Program
 
 1. **Start the Program:**
