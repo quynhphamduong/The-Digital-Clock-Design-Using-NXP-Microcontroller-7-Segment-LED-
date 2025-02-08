@@ -1,8 +1,8 @@
-# README: Mock Embedded discription
+# The Digital Clock Design Using NXP Microcontroller 7 Segment LED Setting Time And Alarm through GUI App ⏰💻
 
 ## Overview
 
-This document provides details descriptions about the MOCK EMB that our group creates and sets in the program. 
+This document provides details descriptions about the The Digital Clock that our group creates and sets in the program. 
 
 
 ## Running the Program
