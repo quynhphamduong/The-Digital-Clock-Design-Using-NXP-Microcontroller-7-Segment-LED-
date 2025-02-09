@@ -17,7 +17,7 @@
 
 ## Library Contributors
 - Tran Quang Nguyen Anh: FTFC (Flash), LPSPI, Unit test, Main
-- Pham Duong Quynh : GPIO, LPUART, SCG, SYSTEM_TICK, PCC, INTERRUPT, Main
+- Pham Duong Quynh : GPIO, LPUART, SCG, SYSTEM_TICK, PCC, INTERRUPT, Main, Unit test
 
 ## Running the Program
 
