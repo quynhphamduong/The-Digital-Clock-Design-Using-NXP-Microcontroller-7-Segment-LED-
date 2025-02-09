@@ -42,7 +42,7 @@
    - With the unit test, you want to run unit test, you have to convert function emb_mock() in main.c file to comment and calls fucntions that we have revealed in test report excel. If no or call functions in UNIT_TEST.h, they can break the program. 
    
 ## License
-   - Due to confidentiality constraints, the supporting libraries are not included in this repository. If you need access, please send me an email with the following details:
+   - Due to confidentiality constraints, the full supporting libraries are not included in this repository. If you need access, please send me an email with the following details:
 
       **Subject**: Request for Embedded Project Libraries
 
