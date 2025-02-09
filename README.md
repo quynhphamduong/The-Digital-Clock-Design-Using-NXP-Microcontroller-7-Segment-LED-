@@ -1,24 +1,32 @@
 # The Digital Clock Design Using NXP Microcontroller, 7 Segment LED, Setting Time And Alarm Through GUI App ⏰💻
 
-## Overview
+## Project Overview
 
-This document provides details descriptions about the The Digital Clock that our group creates and sets in the program. 
+This document provides details descriptions about the The Digital Clock that our group creates and sets in the program.
+For architecture and detail design of the clock : [Architecture and Detail design](FILE_NAME.pdf)
 
-## Contributors
-- Tran Quang Nguyen Anh
--  Pham Duong Quynh
+
+## Hardware
+- NXP Microcontroller : S32K EVB
+- 7 Segment LED : 74HC595
+
+## Library Contributors
+- Tran Quang Nguyen Anh: FTFC (Flash), LPSPI, Unit test, Main
+- Pham Duong Quynh : GPIO, LPUART, SCG, SYSTEM_TICK, PCC, INTERRUPT, Main
+
 ## Running the Program
 
 1. **Start the Program:**
    - Once the program is flashed onto the board, it will begin execution immediately. The main loop will handle time and date updates, manage display settings, and check alarms.
 
 2. **Interact with the Program:**
+   Ater power on, the clock will display the time: 00-00-00 (date: 00.00.0000)
    - **Buttons:**
      - **BUTTON_PIN1 (PTC12):** Switches between time and date display modes.
      - **BUTTON_PIN2 (PTC13):** Toggles the display on and off.
    - **Display:**
      - When enabled, the 7-segment display will show either the current time or date based on the selected mode.
-     - When disabled, the program allow you to set the new date and time for calculation and display. Furthermore alarm mode set also is enabled here. You can set alarm time for board (Display by GREEN LED in 1 second). Furthermore, you can also set the program display the real time. 
+     - When disabled, the program allow you to set the new date and time for calculation and display. Furthermore alarm mode set also is enabled here. You can set alarm time for board (Display by GREEN LED in 1 second). Furthermore, you can also set the program display the real time through GUI app. 
 
    - **UART and SPI Outputs:**
      - The program sends the current time and date via UART and SPI.
