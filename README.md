@@ -11,6 +11,10 @@
 - NXP Microcontroller : S32K EVB - An Automotive Microcontroller
 - 7 Segment LED : 74HC595
 
+## Tools
+- Keil uVision
+- Visual Studio Code
+
 ## Library Contributors
 - Tran Quang Nguyen Anh: FTFC (Flash), LPSPI, Unit test, Main
 - Pham Duong Quynh : GPIO, LPUART, SCG, SYSTEM_TICK, PCC, INTERRUPT, Main
