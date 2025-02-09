@@ -3,6 +3,7 @@
 ## Project Overview
 
 - This document provides details descriptions about the The Digital Clock that our group creates and sets in the program.
+- For understanding what we did and how to run the program, please check the section "Running the program"
 - For architecture and detail design of the clock : [Architecture and Detail design.pdf](https://github.com/quynhphamduong/The-Digital-Clock-Design-Using-NXP-Microcontroller-7-Segment-LED-/blob/cdbe5cfcbc72dcd61f888e2d0aa1bb24a655f53d/Architecture%20and%20Detail%20design.pdf)
 
 
