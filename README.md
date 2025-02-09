@@ -8,7 +8,7 @@
 
 
 ## Hardware
-- NXP Microcontroller : S32K EVB
+- NXP Microcontroller : S32K EVB - An Automotive Microcontroller
 - 7 Segment LED : 74HC595
 
 ## Library Contributors
